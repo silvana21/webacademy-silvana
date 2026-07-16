@@ -11,8 +11,6 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v5
-            - name: Lista arquivos
-              run: ls ${{ github.workspace }}
-            - name: Status
-              run: echo "Status ${{ job.status }}."
+            - name: ler Readme
+              run: cat README.md
 
